@@ -1,2 +1,1 @@
--e git+https://github.com/adwiza/package.git@efc421e5e59b7e257c1cdb7cdc8026ec79e24a6b#egg=mycalc
 pytz==2021.3
