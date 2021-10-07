@@ -12,7 +12,7 @@ setup(
     version='0.0.1',
     description='A small example package with some arithmetics',
     packages=find_packages(),
-    # install_requires=read_requirements_txt(),
+    install_requires=read_requirements_txt(),
     include_package_data=True,
     author='Amazing Author',
     author_email='author@example.com',
