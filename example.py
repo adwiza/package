@@ -1,9 +1,12 @@
-from tasks import add
+import celery
+from tasks import add, divide
 
 
 def main():
-    result = add.delay(37, 4515)
-    print(result.status)
+    chain = celery.chain(add.s(17, 15), divide.s(10))
+    print(chain)
+    result = chain()
+    print(result.state)
     print(result.get())
     print(result.state)
 

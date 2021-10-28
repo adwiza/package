@@ -1,0 +1,2 @@
+celery -A  tasks worker --loglevel=INFO --pool=solo -n worker1 -Q add
+celery -A  tasks worker --loglevel=INFO --pool=solo -n worker2 -Q divide
