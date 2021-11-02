@@ -22,8 +22,8 @@ class UnluckyException(Exception):
 )
 def multiply_roulette(self, x, y):
     try:
-        if random.random() == 6:
+        if random.random() < 1/6:
             raise UnluckyException
-        return x * y
+        return x / y
     except UnluckyException as exc:
         self.retry(exc=exc)
